@@ -5,11 +5,13 @@ use groth16_solana::groth16::Groth16Verifier;
 mod verifying_key;
 
 use verifying_key::VERIFYINGKEY;
+
 type G1 = ark_bn254::g1::G1Affine;
-declare_id!("BTE9HVuchGLa2nDK5PRPwzfjHkbusdrMZFBnryGFVWTz");
+
+declare_id!("4jjoBAJ5dYSWLDLGJghcLKhNemQzGmi13mtntJTsiJUu");
 
 #[program]
-pub mod zk_guide {
+pub mod zk_circuit {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {

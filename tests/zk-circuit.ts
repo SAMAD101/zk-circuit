@@ -1,14 +1,14 @@
 import * as anchor from "@coral-xyz/anchor";
 import { BN, Program } from "@coral-xyz/anchor";
-import { ZkGuide } from "../target/types/zk_guide";
+import { ZkCircuit } from "../target/types/zk_circuit";
 
 import * as snarkjs from "snarkjs";
 
-describe("zk-guide", () => {
+describe("zk-circuit", () => {
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
 
-  const program = anchor.workspace.ZkGuide as Program<ZkGuide>;
+  const program = anchor.workspace.ZkCircuit as Program<ZkCircuit>;
 
   it("Verifies a proof", async () => {
     const a = BigInt(100);
