@@ -16,6 +16,6 @@ rm -f circuit/multiply2numbers_0000.zkey circuit/multiply2numbers_0001.zkey
 
 ## Generate the .rs file
 yarn
-node circuit/vk_to_rs.js circuit/vk_multiply2numbers.json programs/zk-guide/src
+node circuit/vk_to_rs.js circuit/vk_multiply2numbers.json programs/zk-circuit/src
 
 echo "Done!"

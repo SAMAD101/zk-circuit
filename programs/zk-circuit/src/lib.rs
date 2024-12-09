@@ -3,7 +3,6 @@ use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
 use groth16_solana::groth16::Groth16Verifier;
 
 mod verifying_key;
-mod verifying_key;
 
 use verifying_key::VERIFYINGKEY;
 type G1 = ark_bn254::g1::G1Affine;
